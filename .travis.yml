@@ -17,7 +17,7 @@ jobs:
     - stage: deploy website
       script:
         - yarn
-        - expo build:web
+        - npx expo build:web
       deploy:
         provider: netlify
         site: $NETLIFY_ID
