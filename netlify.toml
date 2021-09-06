@@ -1,5 +1,5 @@
 [build]
-  command = "yarn;expo build:web"
+  command = "yarn;npx expo build:web"
   publish = "/web-build"
   base = "/"
 
