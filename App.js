@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   StyleSheet,
   Text,
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   }
 })
 
-class randomBackground extends Component {
+class randomBackground extends React.Component {
   constructor(props) {
     super(props)
 
