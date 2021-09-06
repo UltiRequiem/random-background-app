@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableHighlight
-} from 'react-native'
+import { StyleSheet, Text, View, TouchableHighlight } from 'react-native'
 
 function randomColorHex() {
   const letters = '0123456789ABCDEF'
@@ -40,6 +35,7 @@ class randomBackground extends React.Component {
 
   onClick() {
     this.setState({ backgroundColor: randomColorHex() })
+    // setInterval(() => this.setState({ backgroundColor: randomColorHex() }), 0.1)
   }
 
   render() {
