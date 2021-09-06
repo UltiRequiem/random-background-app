@@ -1,37 +1,61 @@
-import React from 'react'
-import { View, Button, TouchableOpacity, Text } from 'react-native'
-import styled from 'styled-components/native'
+import React, { Component } from 'react'
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableHighlight
+} from 'react-native'
 
-const StyledView = styled.View`
-  display: flex;
-  background-color: papayawhip;
-`
+function randomHex() {
+  const letters = '0123456789ABCDEF'
+  let color = '#'
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)]
+  }
+  return color
+}
 
-const ButtonContainer = styled.TouchableOpacity`
-  elevation: 8;
-  border-radius: 10px;
-  padding-vertical: 10px;
-  padding-horizontal: 12px;
-`
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: randomHex()
+  },
+  instructions: {
+    color: 'white'
+  }
+})
 
-const ButtonText = styled.Text`
-  font-size: 18;
-  color: #fff;
-  font-weight: bold;
-  align-self: center;
-  text-transform: uppercase;
-`
+class randomBackground extends Component {
+  constructor(props) {
+    super(props)
 
-const AppButton = ({ onPress, title }) => (
-  <ButtonContainer onPress={onPress}>
-    <ButtonText>{title}</ButtonText>
-  </ButtonContainer>
-)
+    this.onClick = this.onClick.bind(this)
 
-const App = () => (
-  <StyledView>
-    <AppButton title="Hey there!" size="sm" backgroundColor="#007bff" />
-  </StyledView>
-)
+    this.state = {
+      backgroundColor: randomHex()
+    }
+  }
 
-export default App
+  onClick() {
+    this.setState({ backgroundColor: randomHex() })
+  }
+
+  render() {
+    return (
+      <TouchableHighlight
+        onPress={this.onClick}
+        style={[
+          styles.container,
+          { backgroundColor: this.state.backgroundColor }
+        ]}
+      >
+        <View>
+          <Text style={styles.instructions}>Tap to change the background</Text>
+        </View>
+      </TouchableHighlight>
+    )
+  }
+}
+export default randomBackground
