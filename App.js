@@ -6,7 +6,7 @@ import {
   TouchableHighlight
 } from 'react-native'
 
-function randomHex() {
+function randomColorHex() {
   const letters = '0123456789ABCDEF'
   let color = '#'
   for (let i = 0; i < 6; i++) {
@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: randomHex()
+    backgroundColor: randomColorHex()
   },
-  instructions: {
+  text: {
     color: 'white'
   }
 })
@@ -34,12 +34,12 @@ class randomBackground extends React.Component {
     this.onClick = this.onClick.bind(this)
 
     this.state = {
-      backgroundColor: randomHex()
+      backgroundColor: randomColorHex()
     }
   }
 
   onClick() {
-    this.setState({ backgroundColor: randomHex() })
+    this.setState({ backgroundColor: randomColorHex() })
   }
 
   render() {
@@ -52,7 +52,7 @@ class randomBackground extends React.Component {
         ]}
       >
         <View>
-          <Text style={styles.instructions}>Tap to change the background</Text>
+          <Text style={styles.text}>Tap to change the background color.</Text>
         </View>
       </TouchableHighlight>
     )
