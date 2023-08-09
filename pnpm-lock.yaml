@@ -7388,6 +7388,7 @@ packages:
 
   /glob@6.0.4:
     resolution: {integrity: sha512-MKZeRNyYZAVVVG1oZeLaWie1uweH40m9AZwIwxyPbTSX4hHrVYSzLg0Ro5Z5R7XKkIX+Cc6oD1rqeDJnwsB8/A==}
+    requiresBuild: true
     dependencies:
       inflight: 1.0.6
       inherits: 2.0.4
@@ -9890,6 +9891,7 @@ packages:
   /ncp@2.0.0:
     resolution: {integrity: sha1-GVoh1sRuNh0vsSgbo4uR6d9727M=}
     hasBin: true
+    requiresBuild: true
     dev: true
 
   /needle@2.9.1:
@@ -10371,7 +10373,7 @@ packages:
       levn: 0.4.1
       prelude-ls: 1.2.1
       type-check: 0.4.0
-      word-wrap: 1.2.3
+      word-wrap: 1.2.5
     dev: true
 
   /options@0.0.6:
@@ -12021,6 +12023,7 @@ packages:
   /rimraf@2.4.5:
     resolution: {integrity: sha512-J5xnxTyqaiw06JjMftq7L9ouA448dw/E7dKghkP9WpKNuwmARNNg+Gk8/u5ryb9N/Yo2+z3MCwuqFK/+qPOPfQ==}
     hasBin: true
+    requiresBuild: true
     dependencies:
       glob: 6.0.4
     dev: true
@@ -13962,8 +13965,8 @@ packages:
       pify: 4.0.1
     dev: true
 
-  /word-wrap@1.2.3:
-    resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
+  /word-wrap@1.2.5:
+    resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
     dev: true
 
