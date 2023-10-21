@@ -7388,6 +7388,7 @@ packages:
 
   /glob@6.0.4:
     resolution: {integrity: sha512-MKZeRNyYZAVVVG1oZeLaWie1uweH40m9AZwIwxyPbTSX4hHrVYSzLg0Ro5Z5R7XKkIX+Cc6oD1rqeDJnwsB8/A==}
+    requiresBuild: true
     dependencies:
       inflight: 1.0.6
       inherits: 2.0.4
@@ -7935,6 +7936,7 @@ packages:
   /iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dependencies:
       safer-buffer: 2.1.2
 
@@ -9890,6 +9892,7 @@ packages:
   /ncp@2.0.0:
     resolution: {integrity: sha1-GVoh1sRuNh0vsSgbo4uR6d9727M=}
     hasBin: true
+    requiresBuild: true
     dev: true
 
   /needle@2.9.1:
@@ -11599,8 +11602,8 @@ packages:
       - vue-template-compiler
     dev: true
 
-  /react-devtools-core@4.23.0:
-    resolution: {integrity: sha512-KkzneT1LczFtebbTJlvRphIRvzuHLhI9ghfrseVv9ktBs+l2cXy8Svw5U16lzQnwU9okVEcURmGPgH79WWrlaw==}
+  /react-devtools-core@4.28.4:
+    resolution: {integrity: sha512-IUZKLv3CimeM07G3vX4H4loxVpByrzq3HvfTX7v9migalwvLs9ZY5D3S3pKR33U+GguYfBBdMMZyToFhsSE/iQ==}
     dependencies:
       shell-quote: 1.7.3
       ws: 7.5.7
@@ -12021,6 +12024,7 @@ packages:
   /rimraf@2.4.5:
     resolution: {integrity: sha512-J5xnxTyqaiw06JjMftq7L9ouA448dw/E7dKghkP9WpKNuwmARNNg+Gk8/u5ryb9N/Yo2+z3MCwuqFK/+qPOPfQ==}
     hasBin: true
+    requiresBuild: true
     dependencies:
       glob: 6.0.4
     dev: true
@@ -14325,7 +14329,7 @@ packages:
     dev: true
 
   '@github.com/expo/react-native/archive/sdk-42.0.0.tar.gz(@babel/core@7.17.5)(react@16.13.1)':
-    resolution: {tarball: https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz}
+    resolution: {registry: https://registry.npmjs.org/, tarball: https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz}
     id: '@github.com/expo/react-native/archive/sdk-42.0.0.tar.gz'
     name: react-native
     version: 0.63.2
@@ -14355,7 +14359,7 @@ packages:
       promise: 8.1.0
       prop-types: 15.8.1
       react: 16.13.1
-      react-devtools-core: 4.23.0
+      react-devtools-core: 4.28.4
       react-refresh: 0.4.3
       regenerator-runtime: 0.13.9
       scheduler: 0.19.1
